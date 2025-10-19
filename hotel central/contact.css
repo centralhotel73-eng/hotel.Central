@@ -1,0 +1,185 @@
+/* ==============================
+   GLOBAL STYLES
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #000; /* black background */
+  color: #fff; /* white text */
+  line-height: 1.6;
+}
+
+/* ==============================
+   HEADER
+============================== */
+header {
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+header p {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+/* ==============================
+   CONTACT CONTAINER
+============================== */
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center the contact info */
+  gap: 30px;
+  text-align: center; /* center text for neat alignment */
+}
+
+.contact-info {
+  background-color: #111;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.05);
+  width: 100%;
+  max-width: 600px; /* keeps info box centered and not too wide */
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 12px 0;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* ==============================
+   CONTACT BUTTONS
+============================== */
+.contact-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+}
+
+.contact-btn:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 4px 15px rgba(255,255,255,0.3);
+  transform: translateY(-2px);
+}
+
+/* ==============================
+   MAP ALIGNMENT
+============================== */
+.map {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center the map */
+  gap: 20px;
+}
+
+.map h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 700px; /* limits map width for better alignment */
+  height: 400px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255,255,255,0.05);
+}
+
+/* ==============================
+   FOOTER
+============================== */
+footer {
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 60px;
+  border-top: 1px solid #333;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    padding: 20px;
+  }
+
+  .map iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-info h2,
+  .map h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
